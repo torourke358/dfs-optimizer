@@ -1,5 +1,5 @@
-import { useCallback, useMemo, useState } from 'react';
-import { exportDkCsv, fetchSampleSlate, optimize, uploadCsv } from './api';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { exportDkCsv, fetchSampleSlate, optimize, uploadCsv, warmBackend } from './api';
 import { PlayerTable } from './components/PlayerTable';
 import { Results } from './components/Results';
 import { SettingsPanel } from './components/SettingsPanel';
@@ -28,6 +28,17 @@ export default function App() {
   const [generating, setGenerating] = useState(false);
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState('');
+  const [backendReady, setBackendReady] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    warmBackend().then((ok) => {
+      if (!cancelled) setBackendReady(ok);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const loadPlayers = useCallback((list: Player[], name: string) => {
     setPlayers(list);
@@ -43,11 +54,17 @@ export default function App() {
     try {
       loadPlayers(await fetchSampleSlate(), 'Sample NFL main slate · 12 teams');
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Could not load the sample slate');
+      setError(
+        backendReady
+          ? e instanceof Error
+            ? e.message
+            : 'Could not load the sample slate'
+          : 'The solver server is still waking up (free hosting) — give it a few seconds and try again.',
+      );
     } finally {
       setLoading(false);
     }
-  }, [loadPlayers]);
+  }, [loadPlayers, backendReady]);
 
   const handleFile = useCallback(
     async (file: File) => {
@@ -122,6 +139,17 @@ export default function App() {
         </h1>
         <p className="masthead__tag">DraftKings NFL lineup optimizer · CP-SAT under the hood</p>
         {slateName && <span className="masthead__slate mono">{slateName}</span>}
+        <span
+          className={`status-pill${backendReady ? ' status-pill--ready' : ''}`}
+          title={
+            backendReady
+              ? 'Solver server is awake'
+              : 'Free hosting sleeps when idle — waking the solver server now'
+          }
+        >
+          <span className="status-pill__dot" />
+          {backendReady ? 'solver ready' : 'waking solver…'}
+        </span>
       </header>
 
       <UploadZone onFile={handleFile} onLoadSample={handleSample} loading={loading} />

@@ -16,6 +16,22 @@ async function handle<T>(res: Response): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+/** Ping until the backend answers — free-tier hosts sleep when idle and can
+ * take ~50s to wake, so this starts on page load to absorb the cold start. */
+export async function warmBackend(timeoutMs = 120_000): Promise<boolean> {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const res = await fetch(`${API_BASE}/api/health`, { signal: AbortSignal.timeout(15_000) });
+      if (res.ok) return true;
+    } catch {
+      /* still asleep — keep knocking */
+    }
+    await new Promise((r) => setTimeout(r, 4000));
+  }
+  return false;
+}
+
 export async function fetchSampleSlate(): Promise<Player[]> {
   return handle(await fetch(`${API_BASE}/api/sample`));
 }

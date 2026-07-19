@@ -99,6 +99,52 @@ body {
   font-size: 12px;
 }
 
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  border: 1px solid var(--seam);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--dim);
+}
+
+.masthead__slate ~ .status-pill {
+  margin-left: 0;
+}
+
+.status-pill__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sodium);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.status-pill--ready {
+  color: var(--wr);
+}
+
+.status-pill--ready .status-pill__dot {
+  background: var(--wr);
+  animation: none;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-pill__dot {
+    animation: none;
+  }
+}
+
 /* ---------- upload ---------- */
 
 .upload-row {
