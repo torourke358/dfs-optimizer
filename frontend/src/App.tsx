@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { exportDkCsv, fetchSampleSlate, optimize, uploadCsv, warmBackend } from './api';
+import { exportDkCsv, optimize, uploadCsv, warmBackend } from './api';
+import samplePlayers from './data/sample_players.json';
 import { PlayerTable } from './components/PlayerTable';
 import { Results } from './components/Results';
 import { SettingsPanel } from './components/SettingsPanel';
@@ -48,23 +49,11 @@ export default function App() {
     setError('');
   }, []);
 
-  const handleSample = useCallback(async () => {
-    setLoading(true);
-    setError('');
-    try {
-      loadPlayers(await fetchSampleSlate(), 'Sample NFL main slate · 12 teams');
-    } catch (e) {
-      setError(
-        backendReady
-          ? e instanceof Error
-            ? e.message
-            : 'Could not load the sample slate'
-          : 'The solver server is still waking up (free hosting) — give it a few seconds and try again.',
-      );
-    } finally {
-      setLoading(false);
-    }
-  }, [loadPlayers, backendReady]);
+  const handleSample = useCallback(() => {
+    // Bundled with the app so the demo works instantly, even while the
+    // free-tier backend is still waking from a cold start.
+    loadPlayers(samplePlayers as Player[], 'Sample NFL main slate · 12 teams');
+  }, [loadPlayers]);
 
   const handleFile = useCallback(
     async (file: File) => {
@@ -107,11 +96,17 @@ export default function App() {
     try {
       setResult(await optimize(players, adjustments, settings));
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Optimization failed');
+      setError(
+        backendReady
+          ? e instanceof Error
+            ? e.message
+            : 'Optimization failed'
+          : 'The solver server is still waking up (free hosting) — give it a few seconds and try again.',
+      );
     } finally {
       setGenerating(false);
     }
-  }, [players, adjustments, settings]);
+  }, [players, adjustments, settings, backendReady]);
 
   const handleExport = useCallback(async () => {
     if (!result) return;

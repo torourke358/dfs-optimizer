@@ -1,0 +1,1442 @@
+[
+{
+"id": "39970001",
+"name": "Josh Allen",
+"position": "QB",
+"salary": 8300,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 24.8
+},
+{
+"id": "39970002",
+"name": "Mitchell Trubisky",
+"position": "QB",
+"salary": 4500,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 8.1
+},
+{
+"id": "39970003",
+"name": "James Cook",
+"position": "RB",
+"salary": 7400,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 18.9
+},
+{
+"id": "39970004",
+"name": "Ray Davis",
+"position": "RB",
+"salary": 5200,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 9.6
+},
+{
+"id": "39970005",
+"name": "Ty Johnson",
+"position": "RB",
+"salary": 4200,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 6.2
+},
+{
+"id": "39970006",
+"name": "Khalil Shakir",
+"position": "WR",
+"salary": 6300,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 13.8
+},
+{
+"id": "39970007",
+"name": "Keon Coleman",
+"position": "WR",
+"salary": 5600,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 11.4
+},
+{
+"id": "39970008",
+"name": "Curtis Samuel",
+"position": "WR",
+"salary": 4400,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 7.9
+},
+{
+"id": "39970009",
+"name": "Mack Hollins",
+"position": "WR",
+"salary": 3600,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 6.1
+},
+{
+"id": "39970010",
+"name": "Dalton Kincaid",
+"position": "TE",
+"salary": 4900,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 10.2
+},
+{
+"id": "39970011",
+"name": "Dawson Knox",
+"position": "TE",
+"salary": 3100,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 5.4
+},
+{
+"id": "39970012",
+"name": "Bills",
+"position": "DST",
+"salary": 3300,
+"team": "BUF",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "MIA",
+"projection": 9.8
+},
+{
+"id": "39970013",
+"name": "Tua Tagovailoa",
+"position": "QB",
+"salary": 6700,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 18.3
+},
+{
+"id": "39970014",
+"name": "Zach Wilson",
+"position": "QB",
+"salary": 4300,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 7.2
+},
+{
+"id": "39970015",
+"name": "De'Von Achane",
+"position": "RB",
+"salary": 7900,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 19.8
+},
+{
+"id": "39970016",
+"name": "Raheem Mostert",
+"position": "RB",
+"salary": 5400,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 10.1
+},
+{
+"id": "39970017",
+"name": "Jeff Wilson",
+"position": "RB",
+"salary": 4000,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 5.3
+},
+{
+"id": "39970018",
+"name": "Tyreek Hill",
+"position": "WR",
+"salary": 8800,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 20.6
+},
+{
+"id": "39970019",
+"name": "Jaylen Waddle",
+"position": "WR",
+"salary": 7000,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 15.2
+},
+{
+"id": "39970020",
+"name": "Malik Washington",
+"position": "WR",
+"salary": 3900,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 6.8
+},
+{
+"id": "39970021",
+"name": "River Cracraft",
+"position": "WR",
+"salary": 3200,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 4.4
+},
+{
+"id": "39970022",
+"name": "Jonnu Smith",
+"position": "TE",
+"salary": 4600,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 9.7
+},
+{
+"id": "39970023",
+"name": "Durham Smythe",
+"position": "TE",
+"salary": 2800,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 3.9
+},
+{
+"id": "39970024",
+"name": "Dolphins",
+"position": "DST",
+"salary": 2700,
+"team": "MIA",
+"game_info": "BUF@MIA 11/09/2025 01:00PM ET",
+"opponent": "BUF",
+"projection": 7.1
+},
+{
+"id": "39970025",
+"name": "Dak Prescott",
+"position": "QB",
+"salary": 7100,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 19.9
+},
+{
+"id": "39970026",
+"name": "Cooper Rush",
+"position": "QB",
+"salary": 4400,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 7.6
+},
+{
+"id": "39970027",
+"name": "Javonte Williams",
+"position": "RB",
+"salary": 6600,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 15.7
+},
+{
+"id": "39970028",
+"name": "Rico Dowdle",
+"position": "RB",
+"salary": 5300,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 10.8
+},
+{
+"id": "39970029",
+"name": "Deuce Vaughn",
+"position": "RB",
+"salary": 4000,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 4.9
+},
+{
+"id": "39970030",
+"name": "CeeDee Lamb",
+"position": "WR",
+"salary": 8900,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 21.3
+},
+{
+"id": "39970031",
+"name": "George Pickens",
+"position": "WR",
+"salary": 6800,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 14.6
+},
+{
+"id": "39970032",
+"name": "Jalen Tolbert",
+"position": "WR",
+"salary": 4500,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 8.3
+},
+{
+"id": "39970033",
+"name": "KaVontae Turpin",
+"position": "WR",
+"salary": 3700,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 6.4
+},
+{
+"id": "39970034",
+"name": "Jake Ferguson",
+"position": "TE",
+"salary": 4200,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 8.9
+},
+{
+"id": "39970035",
+"name": "Luke Schoonmaker",
+"position": "TE",
+"salary": 2900,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 4.2
+},
+{
+"id": "39970036",
+"name": "Cowboys",
+"position": "DST",
+"salary": 2500,
+"team": "DAL",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "PHI",
+"projection": 6.5
+},
+{
+"id": "39970037",
+"name": "Jalen Hurts",
+"position": "QB",
+"salary": 7900,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 22.7
+},
+{
+"id": "39970038",
+"name": "Tanner McKee",
+"position": "QB",
+"salary": 4200,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 6.8
+},
+{
+"id": "39970039",
+"name": "Saquon Barkley",
+"position": "RB",
+"salary": 8700,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 21.9
+},
+{
+"id": "39970040",
+"name": "Kenneth Gainwell",
+"position": "RB",
+"salary": 4700,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 7.8
+},
+{
+"id": "39970041",
+"name": "Will Shipley",
+"position": "RB",
+"salary": 4100,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 5.6
+},
+{
+"id": "39970042",
+"name": "A.J. Brown",
+"position": "WR",
+"salary": 8500,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 19.4
+},
+{
+"id": "39970043",
+"name": "DeVonta Smith",
+"position": "WR",
+"salary": 6900,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 15.0
+},
+{
+"id": "39970044",
+"name": "Jahan Dotson",
+"position": "WR",
+"salary": 4300,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 7.2
+},
+{
+"id": "39970045",
+"name": "Johnny Wilson",
+"position": "WR",
+"salary": 3300,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 4.6
+},
+{
+"id": "39970046",
+"name": "Dallas Goedert",
+"position": "TE",
+"salary": 5100,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 10.9
+},
+{
+"id": "39970047",
+"name": "Grant Calcaterra",
+"position": "TE",
+"salary": 3000,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 4.8
+},
+{
+"id": "39970048",
+"name": "Eagles",
+"position": "DST",
+"salary": 3600,
+"team": "PHI",
+"game_info": "DAL@PHI 11/09/2025 01:00PM ET",
+"opponent": "DAL",
+"projection": 10.4
+},
+{
+"id": "39970049",
+"name": "Patrick Mahomes",
+"position": "QB",
+"salary": 7700,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 21.8
+},
+{
+"id": "39970050",
+"name": "Gardner Minshew",
+"position": "QB",
+"salary": 4400,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 7.4
+},
+{
+"id": "39970051",
+"name": "Isiah Pacheco",
+"position": "RB",
+"salary": 6500,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 14.9
+},
+{
+"id": "39970052",
+"name": "Kareem Hunt",
+"position": "RB",
+"salary": 5500,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 11.2
+},
+{
+"id": "39970053",
+"name": "Carson Steele",
+"position": "RB",
+"salary": 4100,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 5.8
+},
+{
+"id": "39970054",
+"name": "Rashee Rice",
+"position": "WR",
+"salary": 7600,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 17.8
+},
+{
+"id": "39970055",
+"name": "Xavier Worthy",
+"position": "WR",
+"salary": 6400,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 13.9
+},
+{
+"id": "39970056",
+"name": "Hollywood Brown",
+"position": "WR",
+"salary": 5200,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 10.6
+},
+{
+"id": "39970057",
+"name": "JuJu Smith-Schuster",
+"position": "WR",
+"salary": 3800,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 6.6
+},
+{
+"id": "39970058",
+"name": "Travis Kelce",
+"position": "TE",
+"salary": 6200,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 13.7
+},
+{
+"id": "39970059",
+"name": "Noah Gray",
+"position": "TE",
+"salary": 3200,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 5.7
+},
+{
+"id": "39970060",
+"name": "Chiefs",
+"position": "DST",
+"salary": 3100,
+"team": "KC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "LAC",
+"projection": 8.9
+},
+{
+"id": "39970061",
+"name": "Justin Herbert",
+"position": "QB",
+"salary": 7300,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 20.4
+},
+{
+"id": "39970062",
+"name": "Taylor Heinicke",
+"position": "QB",
+"salary": 4300,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 7.0
+},
+{
+"id": "39970063",
+"name": "Omarion Hampton",
+"position": "RB",
+"salary": 7200,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 17.1
+},
+{
+"id": "39970064",
+"name": "Najee Harris",
+"position": "RB",
+"salary": 5800,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 11.9
+},
+{
+"id": "39970065",
+"name": "Kimani Vidal",
+"position": "RB",
+"salary": 4200,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 6.0
+},
+{
+"id": "39970066",
+"name": "Ladd McConkey",
+"position": "WR",
+"salary": 7100,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 16.3
+},
+{
+"id": "39970067",
+"name": "Quentin Johnston",
+"position": "WR",
+"salary": 5500,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 11.1
+},
+{
+"id": "39970068",
+"name": "Keenan Allen",
+"position": "WR",
+"salary": 5900,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 12.4
+},
+{
+"id": "39970069",
+"name": "Derius Davis",
+"position": "WR",
+"salary": 3400,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 5.2
+},
+{
+"id": "39970070",
+"name": "Will Dissly",
+"position": "TE",
+"salary": 3800,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 7.6
+},
+{
+"id": "39970071",
+"name": "Tyler Conklin",
+"position": "TE",
+"salary": 3300,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 6.0
+},
+{
+"id": "39970072",
+"name": "Chargers",
+"position": "DST",
+"salary": 3200,
+"team": "LAC",
+"game_info": "KC@LAC 11/09/2025 04:25PM ET",
+"opponent": "KC",
+"projection": 9.1
+},
+{
+"id": "39970073",
+"name": "Brock Purdy",
+"position": "QB",
+"salary": 6900,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 19.1
+},
+{
+"id": "39970074",
+"name": "Mac Jones",
+"position": "QB",
+"salary": 4500,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 8.0
+},
+{
+"id": "39970075",
+"name": "Christian McCaffrey",
+"position": "RB",
+"salary": 8600,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 21.4
+},
+{
+"id": "39970076",
+"name": "Jordan Mason",
+"position": "RB",
+"salary": 5600,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 11.5
+},
+{
+"id": "39970077",
+"name": "Isaac Guerendo",
+"position": "RB",
+"salary": 4400,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 7.0
+},
+{
+"id": "39970078",
+"name": "Brandon Aiyuk",
+"position": "WR",
+"salary": 7200,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 16.0
+},
+{
+"id": "39970079",
+"name": "Deebo Samuel",
+"position": "WR",
+"salary": 6700,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 14.4
+},
+{
+"id": "39970080",
+"name": "Jauan Jennings",
+"position": "WR",
+"salary": 5100,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 10.3
+},
+{
+"id": "39970081",
+"name": "Ricky Pearsall",
+"position": "WR",
+"salary": 4200,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 7.5
+},
+{
+"id": "39970082",
+"name": "George Kittle",
+"position": "TE",
+"salary": 6000,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 13.2
+},
+{
+"id": "39970083",
+"name": "Eric Saubert",
+"position": "TE",
+"salary": 2700,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 3.6
+},
+{
+"id": "39970084",
+"name": "49ers",
+"position": "DST",
+"salary": 3000,
+"team": "SF",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SEA",
+"projection": 8.4
+},
+{
+"id": "39970085",
+"name": "Sam Darnold",
+"position": "QB",
+"salary": 6600,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 18.0
+},
+{
+"id": "39970086",
+"name": "Drew Lock",
+"position": "QB",
+"salary": 4200,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 6.9
+},
+{
+"id": "39970087",
+"name": "Kenneth Walker III",
+"position": "RB",
+"salary": 7000,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 16.5
+},
+{
+"id": "39970088",
+"name": "Zach Charbonnet",
+"position": "RB",
+"salary": 5700,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 11.6
+},
+{
+"id": "39970089",
+"name": "Kenny McIntosh",
+"position": "RB",
+"salary": 3900,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 4.8
+},
+{
+"id": "39970090",
+"name": "Jaxon Smith-Njigba",
+"position": "WR",
+"salary": 8200,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 18.7
+},
+{
+"id": "39970091",
+"name": "Cooper Kupp",
+"position": "WR",
+"salary": 6100,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 12.8
+},
+{
+"id": "39970092",
+"name": "Marquez Valdes-Scantling",
+"position": "WR",
+"salary": 3900,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 6.7
+},
+{
+"id": "39970093",
+"name": "Jake Bobo",
+"position": "WR",
+"salary": 3100,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 4.3
+},
+{
+"id": "39970094",
+"name": "Noah Fant",
+"position": "TE",
+"salary": 3900,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 7.8
+},
+{
+"id": "39970095",
+"name": "AJ Barner",
+"position": "TE",
+"salary": 3000,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 5.1
+},
+{
+"id": "39970096",
+"name": "Seahawks",
+"position": "DST",
+"salary": 2900,
+"team": "SEA",
+"game_info": "SF@SEA 11/09/2025 04:05PM ET",
+"opponent": "SF",
+"projection": 8.0
+},
+{
+"id": "39970097",
+"name": "Jared Goff",
+"position": "QB",
+"salary": 7000,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 19.6
+},
+{
+"id": "39970098",
+"name": "Hendon Hooker",
+"position": "QB",
+"salary": 4300,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 6.6
+},
+{
+"id": "39970099",
+"name": "Jahmyr Gibbs",
+"position": "RB",
+"salary": 8400,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 20.7
+},
+{
+"id": "39970100",
+"name": "David Montgomery",
+"position": "RB",
+"salary": 6100,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 13.3
+},
+{
+"id": "39970101",
+"name": "Craig Reynolds",
+"position": "RB",
+"salary": 3800,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 4.5
+},
+{
+"id": "39970102",
+"name": "Amon-Ra St. Brown",
+"position": "WR",
+"salary": 8600,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 20.1
+},
+{
+"id": "39970103",
+"name": "Jameson Williams",
+"position": "WR",
+"salary": 6500,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 13.6
+},
+{
+"id": "39970104",
+"name": "Tim Patrick",
+"position": "WR",
+"salary": 4100,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 7.1
+},
+{
+"id": "39970105",
+"name": "Kalif Raymond",
+"position": "WR",
+"salary": 3500,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 5.9
+},
+{
+"id": "39970106",
+"name": "Sam LaPorta",
+"position": "TE",
+"salary": 5400,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 11.6
+},
+{
+"id": "39970107",
+"name": "Brock Wright",
+"position": "TE",
+"salary": 2800,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 4.0
+},
+{
+"id": "39970108",
+"name": "Lions",
+"position": "DST",
+"salary": 3400,
+"team": "DET",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "GB",
+"projection": 9.3
+},
+{
+"id": "39970109",
+"name": "Jordan Love",
+"position": "QB",
+"salary": 6800,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 18.8
+},
+{
+"id": "39970110",
+"name": "Malik Willis",
+"position": "QB",
+"salary": 4400,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 7.7
+},
+{
+"id": "39970111",
+"name": "Josh Jacobs",
+"position": "RB",
+"salary": 7700,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 18.4
+},
+{
+"id": "39970112",
+"name": "MarShawn Lloyd",
+"position": "RB",
+"salary": 4600,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 7.3
+},
+{
+"id": "39970113",
+"name": "Emanuel Wilson",
+"position": "RB",
+"salary": 3900,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 5.0
+},
+{
+"id": "39970114",
+"name": "Jayden Reed",
+"position": "WR",
+"salary": 6600,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 14.1
+},
+{
+"id": "39970115",
+"name": "Romeo Doubs",
+"position": "WR",
+"salary": 5300,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 10.7
+},
+{
+"id": "39970116",
+"name": "Christian Watson",
+"position": "WR",
+"salary": 4800,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 9.2
+},
+{
+"id": "39970117",
+"name": "Dontayvion Wicks",
+"position": "WR",
+"salary": 4000,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 7.4
+},
+{
+"id": "39970118",
+"name": "Tucker Kraft",
+"position": "TE",
+"salary": 4700,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 9.9
+},
+{
+"id": "39970119",
+"name": "Luke Musgrave",
+"position": "TE",
+"salary": 2900,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 4.4
+},
+{
+"id": "39970120",
+"name": "Packers",
+"position": "DST",
+"salary": 3000,
+"team": "GB",
+"game_info": "DET@GB 11/09/2025 01:00PM ET",
+"opponent": "DET",
+"projection": 8.2
+},
+{
+"id": "39970121",
+"name": "Lamar Jackson",
+"position": "QB",
+"salary": 8100,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 23.9
+},
+{
+"id": "39970122",
+"name": "Josh Johnson",
+"position": "QB",
+"salary": 4200,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 6.4
+},
+{
+"id": "39970123",
+"name": "Derrick Henry",
+"position": "RB",
+"salary": 8200,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 20.3
+},
+{
+"id": "39970124",
+"name": "Justice Hill",
+"position": "RB",
+"salary": 4900,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 8.6
+},
+{
+"id": "39970125",
+"name": "Keaton Mitchell",
+"position": "RB",
+"salary": 4300,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 6.7
+},
+{
+"id": "39970126",
+"name": "Zay Flowers",
+"position": "WR",
+"salary": 6800,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 14.8
+},
+{
+"id": "39970127",
+"name": "Rashod Bateman",
+"position": "WR",
+"salary": 5400,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 10.9
+},
+{
+"id": "39970128",
+"name": "DeAndre Hopkins",
+"position": "WR",
+"salary": 4900,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 9.4
+},
+{
+"id": "39970129",
+"name": "Tylan Wallace",
+"position": "WR",
+"salary": 3200,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 4.7
+},
+{
+"id": "39970130",
+"name": "Mark Andrews",
+"position": "TE",
+"salary": 5300,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 11.3
+},
+{
+"id": "39970131",
+"name": "Isaiah Likely",
+"position": "TE",
+"salary": 4000,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 8.5
+},
+{
+"id": "39970132",
+"name": "Ravens",
+"position": "DST",
+"salary": 3500,
+"team": "BAL",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "CIN",
+"projection": 9.6
+},
+{
+"id": "39970133",
+"name": "Joe Burrow",
+"position": "QB",
+"salary": 7800,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 22.1
+},
+{
+"id": "39970134",
+"name": "Jake Browning",
+"position": "QB",
+"salary": 4400,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 7.9
+},
+{
+"id": "39970135",
+"name": "Chase Brown",
+"position": "RB",
+"salary": 6900,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 16.2
+},
+{
+"id": "39970136",
+"name": "Zack Moss",
+"position": "RB",
+"salary": 5000,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 9.0
+},
+{
+"id": "39970137",
+"name": "Trayveon Williams",
+"position": "RB",
+"salary": 3800,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 4.2
+},
+{
+"id": "39970138",
+"name": "Ja'Marr Chase",
+"position": "WR",
+"salary": 9000,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 22.4
+},
+{
+"id": "39970139",
+"name": "Tee Higgins",
+"position": "WR",
+"salary": 7400,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 16.7
+},
+{
+"id": "39970140",
+"name": "Andrei Iosivas",
+"position": "WR",
+"salary": 4100,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 7.7
+},
+{
+"id": "39970141",
+"name": "Charlie Jones",
+"position": "WR",
+"salary": 3300,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 5.0
+},
+{
+"id": "39970142",
+"name": "Mike Gesicki",
+"position": "TE",
+"salary": 3700,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 7.3
+},
+{
+"id": "39970143",
+"name": "Erick All",
+"position": "TE",
+"salary": 2900,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 4.6
+},
+{
+"id": "39970144",
+"name": "Bengals",
+"position": "DST",
+"salary": 2600,
+"team": "CIN",
+"game_info": "BAL@CIN 11/09/2025 08:20PM ET",
+"opponent": "BAL",
+"projection": 6.9
+}
+]
