@@ -82,21 +82,31 @@ stacking, locks/excludes, and the DK export format.
 
 ## Deploy
 
-### Backend → Railway
+Live demo: frontend at https://caproom-seven.vercel.app (Vercel), backend at
+https://dfs-optimizer-pqbi.onrender.com (Render free tier — the instance
+sleeps after ~15 min idle, so the first request may take ~50 s to wake it).
 
-1. `railway login`, then from the repo root: `railway init`
-2. `railway up --service backend` (or point the service's root directory at
-   `/backend` in the dashboard — the Dockerfile is picked up automatically,
-   and the container binds to Railway's `$PORT`)
-3. Add an environment variable `FRONTEND_ORIGIN=https://<your-app>.vercel.app`
-4. Generate a public domain for the service; note the URL.
+### Backend → Render (free)
+
+1. New + → **Web Service**, connect this repo, runtime **Docker**,
+   instance type **Free**. The root `Dockerfile` builds the backend, so no
+   root-directory setting is needed (Railway or any Docker host works the
+   same way; `backend/Dockerfile` exists for builds scoped to that folder).
+2. Deploy and note the service URL.
 
 ### Frontend → Vercel
 
 1. `vercel login`, then from `/frontend`: `vercel`
-2. Set the project's **Root Directory** to `frontend` (framework preset: Vite)
-3. Add an environment variable `VITE_API_URL=https://<railway-backend-url>`
-4. `vercel --prod`
+2. Add an environment variable `VITE_API_URL=https://<backend-url>` (production)
+3. `vercel deploy --prod`
 
 The frontend reads `VITE_API_URL` at build time; the backend also accepts any
 `*.vercel.app` origin via CORS, so preview deploys work out of the box.
+
+### Solver note for tiny instances
+
+CP-SAT runs with `num_workers = 1` and a count-based roster model. Free tiers
+grant a fraction of one CPU; the default thread-per-core portfolio thrashes
+there, and a slot-assignment formulation adds RB/WR/FLEX permutation symmetry
+that makes single-worker optimality proofs take seconds per lineup. The count
+model is equivalent for single-flex rosters and solves in milliseconds.
