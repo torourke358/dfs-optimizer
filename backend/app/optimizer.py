@@ -1,10 +1,12 @@
 """CP-SAT lineup optimizer.
 
-Model: one binary slot-assignment variable y[p, s] per (player, eligible slot)
-pair, plus x[p] = "player p is in the lineup" tying them together. The
-assignment formulation (rather than per-position count bounds) generalizes to
-sports with multi-position eligibility (NBA G/F/UTIL) and yields the exact
-slot for each player, which the DraftKings bulk-import export needs.
+Model: one binary variable x[p] per player, with per-position count bounds
+derived from the sport config (e.g. NFL Classic: QB==1, RB in [2,3],
+WR in [3,4], TE in [1,2], DST==1, total==9). For single-flex roster shapes
+these bounds are exactly equivalent to a full slot-assignment model but have
+no slot symmetry, so a single CP-SAT worker solves them in milliseconds —
+which matters on fractional-CPU hosts. Slots (including FLEX) are assigned
+deterministically after the solve for the DraftKings bulk-import export.
 
 Bulk generation re-solves the same model, appending constraints between
 solves: a no-duplicate cut (and optional max-overlap cut) per found lineup,
@@ -64,6 +66,34 @@ def _exposure_cap(fraction: float, num_lineups: int) -> int:
     return math.floor(fraction * num_lineups + 1e-9)
 
 
+def _assign_slots(chosen: list[Player], config: SportConfig) -> list[LineupPlayer]:
+    """Deterministically map a chosen roster onto the config's slot order.
+
+    Pure slots (single eligible position) are filled first, highest projection
+    first; whatever remains goes to flex slots that accept its position.
+    """
+    remaining = sorted(chosen, key=lambda p: -p.projection)
+    result: dict[str, Player] = {}
+    for slot in config.slots:
+        if len(slot.eligible_positions) == 1:
+            pos = slot.eligible_positions[0]
+            pick = next((p for p in remaining if p.position == pos), None)
+            if pick is not None:
+                result[slot.name] = pick
+                remaining.remove(pick)
+    for slot in config.slots:
+        if slot.name in result:
+            continue
+        pick = next((p for p in remaining if p.position in slot.eligible_positions), None)
+        if pick is None:
+            raise OptimizerError(
+                f"Internal error: solver roster does not fit slot {slot.name}"
+            )
+        result[slot.name] = pick
+        remaining.remove(pick)
+    return [LineupPlayer(slot=s.name, player=result[s.name]) for s in config.slots]
+
+
 def generate_lineups(
     players: list[Player],
     settings: OptimizeSettings,
@@ -82,28 +112,25 @@ def generate_lineups(
         )
 
     model = cp_model.CpModel()
-
-    # x[i]: player i is in the lineup; y[(i, s)]: player i fills slot s.
     x = [model.new_bool_var(f"x_{p.id}") for p in pool]
-    y: dict[tuple[int, int], cp_model.IntVar] = {}
-    for i, p in enumerate(pool):
-        eligible = [
-            s for s, slot in enumerate(config.slots) if p.position in slot.eligible_positions
-        ]
-        if not eligible:
-            model.add(x[i] == 0)  # position not used by this contest type
-            continue
-        for s in eligible:
-            y[(i, s)] = model.new_bool_var(f"y_{p.id}_{s}")
-        model.add(sum(y[(i, s)] for s in eligible) == x[i])
 
-    for s in range(len(config.slots)):
-        slot_vars = [y[(i, s)] for i in range(len(pool)) if (i, s) in y]
-        if not slot_vars:
-            raise OptimizerError(
-                f"No players in the pool can fill the {config.slots[s].name} slot"
-            )
-        model.add(sum(slot_vars) == 1)
+    valid_positions = set(config.positions)
+    for i, p in enumerate(pool):
+        if p.position not in valid_positions:
+            model.add(x[i] == 0)  # position not used by this contest type
+
+    by_position: dict[str, list[cp_model.IntVar]] = {pos: [] for pos in config.positions}
+    for i, p in enumerate(pool):
+        if p.position in by_position:
+            by_position[p.position].append(x[i])
+
+    for pos, (lo, hi) in config.position_bounds().items():
+        vars_ = by_position[pos]
+        if len(vars_) < lo:
+            raise OptimizerError(f"Not enough {pos}s in the pool (need at least {lo})")
+        model.add(sum(vars_) >= lo)
+        model.add(sum(vars_) <= hi)
+    model.add(sum(x) == config.roster_size)
 
     salary_expr = sum(p.salary * x[i] for i, p in enumerate(pool))
     model.add(salary_expr <= salary_max)
@@ -113,8 +140,6 @@ def generate_lineups(
     for i, p in enumerate(pool):
         if p.id in locked:
             model.add(x[i] == 1)
-
-    idx_by_id = {p.id: i for i, p in enumerate(pool)}
 
     if settings.stack_qb_wr:
         for i, p in enumerate(pool):
@@ -155,6 +180,10 @@ def generate_lineups(
 
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = _SOLVE_TIME_LIMIT_S
+    # Keep the thread count fixed and low: free hosting tiers grant a fraction
+    # of one CPU, and the count-based model is tiny enough that one worker
+    # proves optimality in milliseconds anyway.
+    solver.parameters.num_workers = 1
 
     lineups: list[Lineup] = []
     counts: dict[int, int] = {i: 0 for i in range(len(pool))}
@@ -176,28 +205,22 @@ def generate_lineups(
             break
 
         chosen = [i for i in range(len(pool)) if solver.value(x[i]) == 1]
-        slot_players: list[LineupPlayer] = []
-        for s, slot in enumerate(config.slots):
-            for i in chosen:
-                if (i, s) in y and solver.value(y[(i, s)]) == 1:
-                    slot_players.append(LineupPlayer(slot=slot.name, player=pool[i]))
-                    break
+        chosen_players = [pool[i] for i in chosen]
         lineups.append(
             Lineup(
-                players=slot_players,
-                total_salary=sum(pool[i].salary for i in chosen),
-                total_projection=round(sum(pool[i].projection for i in chosen), 2),
+                players=_assign_slots(chosen_players, config),
+                total_salary=sum(p.salary for p in chosen_players),
+                total_projection=round(sum(p.projection for p in chosen_players), 2),
             )
         )
 
         # Forbid this exact lineup (and near-copies if max_overlap is set).
-        chosen_x = [x[i] for i in chosen]
         overlap_limit = (
             min(settings.max_overlap, config.roster_size - 1)
             if settings.max_overlap is not None
             else config.roster_size - 1
         )
-        model.add(sum(chosen_x) <= overlap_limit)
+        model.add(sum(x[i] for i in chosen) <= overlap_limit)
 
         # Retire players that just hit their exposure cap.
         for i in chosen:
